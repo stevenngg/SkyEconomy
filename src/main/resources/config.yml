@@ -1,0 +1,39 @@
+#########################################################
+#     SkyEconomy made with love by Wkls (Stevenngg)     #
+# This is the configuration file, feel free to modify   #
+# Anything as you wish! I hope you enjoy our plugin.    #
+#########################################################
+
+# The balance limit allowed for each user, Use decimals
+# for example 10000000.0, put -1 so that it has no limit.
+balance-limit: -1
+
+# The Starting Balance
+starting-balance: 1000.0
+
+# Messages
+player-balance: "<green>Your balance is: ${bal}" # Variables: {bal}
+other-balance: "<green>Balance of player {playerName} is: ${bal}" # Variables: {bal}, {playerName}
+player-command: "<red>This command can only be executed by players."
+player-not-found: "<red>Player not found."
+no-permissions: "<red>You don't have permissions."
+balance-usage: "<red>Usage: /balance [player]"
+balmanager-usage: "<red>Usage: /balmanager <set|add|remove|reset> <player> <amount>"
+balmanager-set-limit: "<red>Cannot set balance. The amount exceeds the limit of ${limit}" # Variables: {limit}
+balmanager-set-balance: "<green>Set balance of player {playerName} to  ${amount}" # Variables: {playerName}, {amount}
+balmanager-add-limit: "<red>Cannot add balance. The amount exceeds the limit of ${limit}" # Variables: {limit}
+balmanager-add-balance: "<green>Added ${amount} to the balance of player {playerName}. New balance: ${newBalance}" # Variables: {amount}, {playerName}, {newBalance}
+balmanager-remove-limit: "<red>Cannot remove balance. The resulting balance would be negative."
+balmanager-remove-balance: "<green>Removed ${amount} from the balance of player {playerName}. New balance: {newBalance}" # Variables: {amount}, {playerName}, {newBalance}
+balmanager-reset-successfully: "<green>Data file of player {playerName} has been reset successfully." # Variables: {playerName}
+balmanager-reset-failed: "<red>Failed to reset data file of player {playerName}. Please try again later." # Variables: {playerName}
+balmanager-reset-not-found: "<red>Data file of player {playerName} not found." # Variables: {playerName}
+economy-usage: "<red>Usage: /economy <reset>"
+economy-successfully: "<green>Economy data has been reset successfully."
+invalid-amount: "<red>Invalid amount."
+amount-positive: "<red>Amount must be positive."
+enough-money: "<red>You do not have enough money to complete this transaction."
+pay-limit: "<red>Cannot pay. The recipient's new balance exceeds the limit of ${limit}" # Variables: {limit}
+pay-player: "<green>You have paid ${amount} to {targetName}. Your new balance is ${newBalance}" # Variables: {amount}, {targetName}, {newBalance}, {newReceiverBalance}
+receiver-pay: "<green>You have received ${amount} from {playerName}. Your new balance is ${newReceiverBalance}" # Variables: {amount}, {playerName}, {newReceiverBalance}
+pay-usage: "<red>Usage: /pay <player> <amount|all>"

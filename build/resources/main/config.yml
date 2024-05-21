@@ -1,0 +1,9 @@
+#########################################################
+#     SkyEconomy made with love by Wkls (Stevenngg)     #
+# This is the configuration file, feel free to modify   #
+# Anything as you wish! I hope you enjoy our plugin.    #
+#########################################################
+
+# The balance limit allowed for each user, Use decimals
+# for example 10000000.0, put -1 so that it has no limit.
+balance-limit: -1

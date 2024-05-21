@@ -1,0 +1,25 @@
+name: SkyEconomy
+version: '${version}'
+main: dev.sky.main.SkyEconomy
+api-version: '1.20'
+author: "wkls"
+commands:
+  balance:
+    description: Check your balance.
+    aliases: ["bal"]
+    usage: /balance
+  balmanager:
+    description: Manage player balances.
+    usage: /balmanager <set|add> <player> <amount>
+    permission: skyeconomy.balmanager
+    aliases: ["balmanage", "managebal", "balancemanager"]
+  pay:
+    description: Pay another player.
+    usage: /pay <player> <amount>
+    permission: skyeconomy.pay
+    permission-message: "You do not have permission to use this command."
+  economy:
+    description: Manage Server Economy.
+    usage: /economy <reset>
+    permission: skyeconomy.economy
+    aliases: ["ecomanager", "economymanager", "eco"]

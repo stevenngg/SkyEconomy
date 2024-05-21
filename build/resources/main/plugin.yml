@@ -1,0 +1,15 @@
+name: SkyEconomy
+version: '1.0.0'
+main: dev.sky.main.SkyEconomy
+api-version: '1.20'
+author: "wkls"
+commands:
+  balance:
+    description: Check your balance.
+    aliases: ["bal"]
+    usage: /balance
+  balmanager:
+    description: Manage player balances.
+    usage: /balmanager <set|add> <player> <amount>
+    permission: skyeconomy.balmanager
+    aliases: ["balmanage", "managebal", "balancemanager"]
